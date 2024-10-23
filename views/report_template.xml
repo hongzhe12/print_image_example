@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_student_management_pdf">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td><strong>姓名</strong></td>
+                            <td><t t-esc="doc.name"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>年龄</strong></td>
+                            <td><t t-esc="doc.age"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>头像</strong></td>
+                            <td>
+                                <img t-if="doc.profile"
+                                     t-att-src="'data:image/png;base64,' + (doc.profile.decode('utf-8') if doc.profile else '')"
+                                     style="width: 100px; height: auto;"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>
