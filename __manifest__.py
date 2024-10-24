@@ -27,9 +27,6 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/paperformat_view.xml',  # 引入纸张格式视图文件
-        'views/report_action_view.xml',  # 引入报告动作视图文件
-        'views/report_template.xml',  # 引入报告模板文件
     ],
     # only loaded in demonstration mode
     'demo': [
