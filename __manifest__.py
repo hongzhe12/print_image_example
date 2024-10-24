@@ -25,6 +25,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'wizards/input_data_views.xml',  # 用户输入数据视图
         'views/views.xml',
         'views/templates.xml',
     ],

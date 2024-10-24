@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_input_data_wizard_form" model="ir.ui.view">
+        <field name="name">input.data.wizard.form</field>
+        <field name="model">input.data.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Input Data Wizard">
+                <group>
+                    <field name="field1"/>
+                    <field name="field2"/>
+                </group>
+                <footer>
+                    <button string="Submit" type="object" name="action_submit" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_input_data_wizard_1" model="ir.actions.act_window">
+        <field name="name">Open Input Data Wizard</field>
+        <field name="res_model">input.data.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

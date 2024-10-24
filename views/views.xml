@@ -7,6 +7,9 @@
         <field name="arch" type="xml">
             <form string="学生管理">
                 <sheet>
+                    <header>
+                        <button string="打开输入窗口" type="action" name="%(action_open_input_data_wizard_1)d" class="btn-primary"/>
+                    </header>
                     <group>
                         <field name="name"/>
                         <field name="age"/>
